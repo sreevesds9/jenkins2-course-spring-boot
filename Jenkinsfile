@@ -1,4 +1,3 @@
-#!/usr/bin/env groovy
 node {
     
     def project_path = 'spring-boot-samples/spring-boot-sample-atmosphere'
