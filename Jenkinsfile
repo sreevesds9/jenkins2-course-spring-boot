@@ -86,6 +86,9 @@ node {
     
       stage("Deploy to Dev") {
        unstash "artifact"
+       sh 'hostname'
+       sh 'date'
+       sh 'ls -lt'
       }
      
   }
@@ -110,6 +113,9 @@ node('qalinux') {
     
       stage("Deploy to QA") {
        unstash "artifact"
+       sh 'hostname'
+       sh 'date'
+       sh 'ls -lt'
       }
      
   }
@@ -133,6 +139,9 @@ node('qalinux') {
     
       stage("Deploy to PROD") {
        unstash "artifact"
+       sh 'hostname'
+       sh 'date'
+       sh 'ls -lt'
       }
      
   }
