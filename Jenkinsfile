@@ -88,6 +88,7 @@ node {
        unstash "artifact"
        sh 'hostname'
        sh 'date'
+       sh 'pwd'
        sh 'ls -lt'
       }
      
@@ -115,6 +116,7 @@ node('qalinux') {
        unstash "artifact"
        sh 'hostname'
        sh 'date'
+       sh 'pwd'
        sh 'ls -lt'
       }
      
@@ -141,6 +143,7 @@ node('qalinux') {
        unstash "artifact"
        sh 'hostname'
        sh 'date'
+       sh 'pwd'
        sh 'ls -lt'
       }
      
